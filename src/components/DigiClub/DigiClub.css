@@ -1,0 +1,53 @@
+.DigiClub-container{
+	background-color: #35a6c8;
+	margin-top: 20px; 
+	width: 96%;
+	margin-right: auto;	
+	margin-left: auto;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+.DigiClub-links{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 70%;
+	flex: 2;
+}
+
+.DigiClub-links .DigiClub-sublinks{
+	background-color: white;
+	flex-basis: 275px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: auto 5px;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+.DigiClub-links .DigiClub-sublinks img{
+	width: 120px;
+	height: 60px;
+	border-radius: 10px 0 0 10px;
+}
+
+.DigiClub-item{
+	flex: 1;
+	text-align: right;
+	color: white;	
+	font-size: 25px;
+	margin: auto 30px;
+}
+
+.DigiClub-links .DigiClub-sublinks i{
+	margin-right: 20px;
+	color: #7587c9;
+}
+

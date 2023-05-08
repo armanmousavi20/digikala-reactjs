@@ -1,0 +1,83 @@
+.DigiPlus-container{
+	background-color: #941b80;
+	width: 96%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.DigiPlus-right{
+    	flex: 1;
+}
+
+.DigiPlus-right h1{
+	color: white;
+	text-align: right;
+	margin-right: 10px;
+}
+.DigiPlus-right p{
+	color: white;
+	font-size: 20px;
+	text-align: right;
+	margin-right: 20px;
+}
+.DigiPlus-right img{
+	width: 350px;
+	height: 250px;
+	margin-top: -70px;
+}
+
+.DigiPlus-right button{
+	padding: 10px 20px;
+	border-radius: 10px;
+	border: 1px solid white;
+	color: white;
+	background-color: #941b80;
+	position: relative;
+	float: right;
+	margin-right: 30px;
+	cursor: pointer;
+}
+
+.DigiPlus-left{
+	background-color: white;
+	border-radius: 10px;
+	margin: 10px;
+	flex: 2;
+
+}
+
+.DigiPlus-left-top{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 30px 20px;
+}
+.DigiPlus-left-top-r {
+	font-size: 20px;
+}
+.DigiPlus-left-top-r i{
+	color: #941b80;
+}
+
+.DigiPlus-left-top-l {
+	color: #941b80 ;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.DigiPlus-left-bottom{
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto;
+	justify-content: space-between;
+	 grid-row-gap: 20px;
+	margin: auto 10px;
+	margin-bottom: 20px;
+}
+
+.DigiPlus-left-bottom img{
+	width: 100px;
+	height: 100px;
+}

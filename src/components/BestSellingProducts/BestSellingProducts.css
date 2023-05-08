@@ -1,0 +1,57 @@
+.bestsellingproducts-container {
+	color: darkred;
+	width: 96%;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	border : 1px solid #e3e0da;
+	border-radius: 10px;
+}
+
+.bestsellingproducts-top{
+	display:inline ;
+}
+
+.bestsellingproducts-top h1{
+    position: relative;
+    left: 40%;
+	color: black;
+	margin-top: 20px;
+}
+
+.bestsellingproducts-top a{
+	position: relative;
+	float: left;
+	text-decoration: none;
+	color: #19bfd3;
+	font-size: 18px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.bestsellingproducts-bottom .mySwiper {
+	direction: rtl;
+	height: 400px;
+}
+.bestsellingproducts-bottom .SwiperSlide .bestsellingproducts-bottom-item{
+	display: flex;
+	flex-direction: row;
+/*	flex-wrap: wrap;
+*/	align-items: center;
+	margin: 20px auto; 
+}
+.bestsellingproducts-bottom .SwiperSlide .bestsellingproducts-bottom-item img{
+	width:  65px;
+	height: 65px;
+}
+
+.bestsellingproducts-bottom .SwiperSlide .bestsellingproducts-bottom-item span{
+	color: lightblue;
+    margin-left: 10px;
+}
+
+.bestsellingproducts-bottom .SwiperSlide .bestsellingproducts-bottom-item p{
+	color: gray;
+	padding-bottom: 25px;
+	border-bottom: 1px solid #f5f2eb;
+}

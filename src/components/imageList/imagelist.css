@@ -1,0 +1,20 @@
+.ImageList-container{
+	width: 96%;
+	height: 300px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.ImageList-container ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	list-style-type: none;
+}
+
+.ImageList-container ul li img{
+	width: 310px;
+	height: 270px;	
+    border-radius: 20px;
+}
+

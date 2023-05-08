@@ -1,0 +1,30 @@
+.categories-container{
+	width: 100%;
+}
+.categories-container h1{
+text-align: center;
+}
+.categories-row1-list li{
+	list-style-type: none;
+}
+.categories-row1-list li img , .categories-row2-list li img{
+	width: 150px;
+	height: 150px;
+}
+.categories-row1-list span{
+	font-weight: bold;
+}
+
+.categories-row1{
+	margin-top: 30px;
+}
+.categories-row1 .categories-row1-list , .categories-row2 .categories-row2-list{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.categories-row1 .categories-row1-list li , .categories-row2 .categories-row2-list li{
+	display: flex;  
+	flex-direction: column;
+}

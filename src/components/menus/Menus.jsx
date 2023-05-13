@@ -7,6 +7,7 @@ import pic4 from '../../img/menus4.png';
 import pic5 from '../../img/menus5.png';
 import pic6 from '../../img/menus6.png';
 import pic7 from '../../img/menus7.png';
+import pic8 from '../../img/menu1/menus8.png';
 
 const Menus = () =>
 {
@@ -14,7 +15,7 @@ const Menus = () =>
 		       <ul>
 		           <li>
 		              <a href="#" className="menus-link">
-		                 <span className="menus-more"> ... </span>
+					  <img src={pic8} />
                          <span> بیشتر </span>
                       </a>   
 		           </li>

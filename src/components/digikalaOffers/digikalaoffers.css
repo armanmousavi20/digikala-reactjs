@@ -35,15 +35,20 @@
 	justify-content: center;
 	align-items: center;
 	padding: 32px;
+	border-bottom: 1px solid #e3e0da;
+	border-right: 1px solid #e3e0da;
 }
-
+.digikalaoffer-row1 ul li:hover{
+	color: red;
+}
 .digikalaoffer-row1 ul li img{
 	margin-top: 0;
 	margin-bottom: 10px;
+	border-bottom: 1px solid red;
 }
 
-/*.digikalaoffer-row1 ul  .border1{
+/* .digikalaoffer-row1 ul  .border1{
 	border-right: 1px solid darkgrey;
 	border-bottom: 1px solid darkgrey;
 	background-color: darkred;
-}*/
+} */

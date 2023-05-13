@@ -22,8 +22,11 @@
 .container-menus ul li a span{
 	color: black;
 	font-size: 15px;
+	font-weight:800;
 }
-
+.container-menus ul li:hover span{
+	color: red;
+}
 .menus-link{	
 	text-decoration: none;
 }

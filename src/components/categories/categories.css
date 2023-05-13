@@ -11,7 +11,7 @@ text-align: center;
 	width: 150px;
 	height: 150px;
 }
-.categories-row1-list span{
+.categories-row1-list span ,.categories-row2-list span {
 	font-weight: bold;
 }
 
@@ -27,4 +27,11 @@ text-align: center;
 .categories-row1 .categories-row1-list li , .categories-row2 .categories-row2-list li{
 	display: flex;  
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.categories-row1 .categories-row1-list li:hover , 
+.categories-row2 .categories-row2-list li:hover{
+	color: red;
 }

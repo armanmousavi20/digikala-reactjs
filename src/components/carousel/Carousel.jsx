@@ -1,33 +1,15 @@
 import React from "react";
 import './carousel.css';
-import {useState} from 'react';
-import {FaChevronLeft, FaChevronRight} from 'react-icons';
-
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 export default function Carousel() {
-
-//   const [sliderRef, setSliderRef] = useState(null)
-
-//   const sliderSettings = {
-//     slidesToShow: 3,
-//     slidesToScroll: 1,
-//     infinite: false,
-//   }
-//   const settings = { 
-//     fade: true ,
-//     speed: 500, // ms
-//     autoplay: false,
-//     initialSlide: 2,
-//     lazyLoad: true,
-//     autoplaySpeed: 3000,
-// }
-
 var settings = {
       className: "slider-body",
       dots: true,
+      navigation : true,
+      arrows : true,
       infinite: true,
       autoplay: true,
       speed: 100,
@@ -87,7 +69,6 @@ var settings = {
       ],
     },
   ]
-
   return (
       <div className="slider-container">
         <Slider {...settings} id="slider-body">
@@ -100,4 +81,5 @@ var settings = {
         </Slider>
       </div>
   )
+
 };

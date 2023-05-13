@@ -39,7 +39,12 @@
 /*	flex-wrap: wrap;
 */	align-items: center;
 	margin: 20px auto; 
+	cursor: pointer;
 }
+.bestsellingproducts-bottom .SwiperSlide .bestsellingproducts-bottom-item:hover {
+	color: red !important;	
+}
+
 .bestsellingproducts-bottom .SwiperSlide .bestsellingproducts-bottom-item img{
 	width:  65px;
 	height: 65px;

@@ -12,5 +12,6 @@
 .ImageList3-container img{
 	width: 49.5%;
 	border-radius: 20px;
+	cursor: pointer;
 }
 

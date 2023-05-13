@@ -9,11 +9,22 @@
     border-radius: 15px;
     margin-bottom: 30px;    
 }
-
-.TopCategories-subitem1 h1 , .TopCategories-subitem1 p{
+.TopCategories-items{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.TopCategories-subitem1{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+/* .TopCategories-subitem1 h1 , .TopCategories-subitem1 p{
 	text-align: right;
 	margin-right: 10px;
-}
+} */
 
 .TopCategories-subitem1 p{
 	color: #8f8685;

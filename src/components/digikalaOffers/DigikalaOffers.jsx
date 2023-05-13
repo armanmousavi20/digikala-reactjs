@@ -64,20 +64,13 @@ const DigikalaOffers = () =>
 		                      </li>
                              </a>
 		                    
-		                    <a href="#" style={{ borderRadius:"0 15px 0 0" }}>
+		                    <a href="#" style={{ borderRadius:"0 15px 0 0" , borderRight:"none !important"  }}>
                              <li>
 		                        <img src={digikalaoffersimg6} />
 		                        <span>  آشنایی با فنون     </span>
 		                      </li>  
 		                    </a>  
-		                    
-
-		               
-		            
-
-		          
-
-                         		                		                    
+		                    		               		        		                                 		                		                    
 		                    <a href="#" style={{ borderRadius:"0 0 0 15px" }}>
 		                      <li>
 		                        <img src={digikalaoffersimg7} />

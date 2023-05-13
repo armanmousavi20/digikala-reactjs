@@ -65,7 +65,7 @@ const BestSellingProducts = () =>{
                                             <img src={bestsellingproductsimg2} />
                                             <span> 2 </span>
                                             <p>
-                                                 زعفران درجه یک مصطفوی - 4.608 گرم
+                                                 زعفران درجه یک مصطفوی 
                                             </p>
                                        </div>
 
@@ -73,7 +73,7 @@ const BestSellingProducts = () =>{
                                             <img src={bestsellingproductsimg3} />
                                             <span> 3 </span>
                                             <p>
-                                            گوشی موبایل سامسونگ مدل Galaxy A13 دو سیم کارت ظرفیت 64 گیگابایت و رم 4 گیگابایت به همراه شارژر                                             
+                                             موبایل سامسونگ مدل Galaxy A13                                             
                                            </p>
                                        </div>
 
@@ -130,7 +130,7 @@ const BestSellingProducts = () =>{
                                             <img src={bestsellingproductsimg9} />
                                             <span> 9 </span>
                                             <p>
-                                           کنسرو ماهی تن در روغن گالکسی - 180 گرم
+                                               کنسرو ماهی تن در روغن گالکسی 
                                             </p>
                                        </div>
 
@@ -141,7 +141,7 @@ const BestSellingProducts = () =>{
                                              <img src={bestsellingproductsimg10} />
                                             <span> 10 </span>
                                             <p> 
-                                           کنسرو ماهی تن در روغن گالکسی - 180 گرم
+                                           کنسرو ماهی تن در روغن گالکسی 
                                              </p>
                                        </div>
 
@@ -149,7 +149,7 @@ const BestSellingProducts = () =>{
                                             <img src={bestsellingproductsimg11} />
                                             <span> 11 </span>
                                             <p>
-                                              رب گوجه فرنگی مکنزی مقدار 800 گرم                                             
+                                              رب گوجه فرنگی مکنزی                                                
                                             </p>
                                        </div>
 

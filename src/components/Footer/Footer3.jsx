@@ -1,26 +1,31 @@
 import React from 'react';
 import './Footer.css';
+import facebookimg from '../../../src/img/footer/facebook.png';
+import instagramimg from '../../../src/img/footer/instagram.jfif';
+import telimg from '../../../src/img/footer/tel.jfif';
+import twitterimg from '../../../src/img/footer/twitter.png';
+
 
 const Footer3 = () =>{
 	return(<div className="Footer3-container">
 		        <div className="Footer3-item1">
-		        	<h2> همراه ما باشید! </h2>
+		        	<h2> !همراه ما باشید </h2>
 		        	
 		        	<div className="Footer3-socialmedia" >
 		        		<a href="#">
-		        		   facebook
+		        		   <img src={facebookimg} />
 		        		</a>
 
 		        	    <a href="#">
-                            instagram
+						   <img src={instagramimg} />
 		        		</a>
 
 		        	    <a href="#">
-		        	        twiter
+						  <img src={telimg} />
 		        		</a>
 
 		        		 <a href="#">
-		        		   youtube
+						     <img src={twitterimg} />		        		    
 		        		</a>
 		        	</div>
 
@@ -38,8 +43,8 @@ const Footer3 = () =>{
 		        <div className="Footer3-item2">
                     <h2> راهنمای خرید از دیجی‌کالا </h2> 
                     <ul>
-                    	<li> <a href="#"> نحوه ثبت صفارس </a> </li>
-                    	<li> <a href="#">  رویه ثبت صفارش   </a> </li>
+                    	<li> <a href="#"> نحوه ثبت سفارس </a> </li>
+                    	<li> <a href="#">  رویه ثبت سفارش   </a> </li>
                     	<li> <a href="#">  شیوه های پرداخت    </a> </li>
                     </ul>                   
 		        </div>
@@ -49,7 +54,7 @@ const Footer3 = () =>{
 		        	<ul>
                     	<li> <a href="#">  پاسخ به پرسشهای متداول   </a> </li>
                     	<li> <a href="#">   رویه های بازگرداندن کالا     </a> </li>
-                    	<li> <a href="#">  شرایط استفادعه   </a> </li>
+                    	<li> <a href="#">  شرایط استفاده   </a> </li>
                     	<li> <a href="#">  حریم خصوصی   </a> </li>
                     	<li> <a href="#">  گزارش باگ     </a> </li>                    	
                     	                    	
@@ -61,10 +66,10 @@ const Footer3 = () =>{
                    <ul>
                     	<li> <a href="#">   اتاق خبر دیجیکالا  </a> </li>
                     	<li> <a href="#">  فروش در دیجیکالا     </a> </li>
-                    	<li> <a href="#">  فرصت های شغلای      </a> </li>
-                    	<li> <a href="#">  فرصت های شغلای      </a> </li>
+                    	<li> <a href="#">  فرصت های شغلی      </a> </li>
+                    	<li> <a href="#">  فرصت های شغلی      </a> </li>
                     	<li> <a href="#">  تماس با دیجی کالا  </a> </li>
-                    	<li> <a href="#">  فرصت های شغلای      </a> </li>
+                    	<li> <a href="#">  فرصت های شغلی      </a> </li>
                     	<li> <a href="#">    درباره دیجی کالا    </a> </li>
 
                     </ul>  

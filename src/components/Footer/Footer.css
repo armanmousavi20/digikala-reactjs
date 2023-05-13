@@ -73,6 +73,13 @@
 .Footer3-item1{
 	flex:3 ;
 }
+.Footer3-item1 img{
+	width:  40px;
+	height: 40px;
+}
+.Footer3-item1 img:hover{
+	cursor: pointer;
+}
 .Footer3-item2{
 	flex: 2;
 }
@@ -117,6 +124,7 @@
 	border-radius: 10px;
 	font-size: 15px;
 	font-weight: bold;
+	cursor: pointer;
 }
 .Footer3-item2 h2{
 	text-align: right;
@@ -168,6 +176,7 @@
 .Footer4-container .Footer4-right h1{
 	color: white;
 	margin-right: 30px;
+	cursor: pointer;
 }
 
 .Footer4-container .Footer4-left{
@@ -180,6 +189,7 @@
 	width: 150px;
 	height: 55px;
 	margin-left: 20px;
+	cursor: pointer;
 }
 
 .Footer4-container .Footer4-left .img-left{

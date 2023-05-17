@@ -13,7 +13,7 @@ const DigiClub = () =>{
                     <img src={digiclubimg1} />
                     <span> جایزه ها </span>
                     <i class="fa fa-gift" aria-hidden="true"></i>
-		         </a>
+		           </a>
 
 		         <a href="#" className="DigiClub-sublinks"> 
                     <img src={digiclubimg2} />

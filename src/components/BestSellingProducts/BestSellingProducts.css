@@ -60,3 +60,19 @@
 	padding-bottom: 25px;
 	border-bottom: 1px solid #f5f2eb;
 }
+
+/* responsive */
+/* mobile*/
+@media only screen and (max-width: 450px){	
+	.bestsellingproducts-top{
+        display: flex;
+		justify-content: space-around ;
+		
+	}	
+	.bestsellingproducts-top a{
+		margin-left: 0 !important;
+	}
+	.bestsellingproducts-top h1{
+		left: 0 !important;
+	}
+}

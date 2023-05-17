@@ -52,3 +52,34 @@
 	border-bottom: 1px solid darkgrey;
 	background-color: darkred;
 } */
+
+
+/* responsive */
+/* width<1024 */
+@media only screen and (max-width: 1024px) and (min-width: 768px){
+	.digikalaoffer-row1 ul{
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		border-radius: 10px;
+		border: 1px solid #e3e0da;	
+	}	
+}
+
+/* tablet */
+@media only screen and (max-width: 768px) and (min-width: 450px){
+	.digikalaoffer-row1 ul{
+		display: grid;
+		grid-template-columns: auto auto auto;
+		border-radius: 10px;
+		border: 1px solid #e3e0da;	
+	}	
+}
+
+@media only screen and (max-width: 450px){
+	.digikalaoffer-row1 ul{
+		display: grid;
+		grid-template-columns: auto auto;
+		border-radius: 10px;
+		border: 1px solid #e3e0da;	
+	}
+}

@@ -8,6 +8,7 @@
 .weblog-header{
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -30,7 +31,7 @@
 .Weblog-items{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
 	flex-wrap: wrap;
 }
 
@@ -39,6 +40,8 @@
 	text-decoration: none;
 	border-radius: 10px;
     color: black;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 
@@ -54,3 +57,7 @@
 	margin-right: 10px;	
 }
 
+/* responsive */
+@media only screen and (max-width: 1024px) and (min-width: 768px){			
+
+}

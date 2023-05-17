@@ -2,6 +2,8 @@ import React,{useState , useEffect} from 'react';
 import img1 from '../../img/1.gif';
 import img2 from "../../img/2.svg"; 
 import img3 from "../../img/location.png"; 
+import menuicon from '../../img/header/menuicon.png';
+import questionicon from '../../img/header/questionicon.png';
 import './header.css';
 import Navbar from './navbar';
 
@@ -28,6 +30,26 @@ const Header = () =>
 	            <div className="img-header" id="img-header">                   
    				        <img src={img1} />				   
 	            </div>
+				<div className='header1-mobile'>
+                    <div className="header-mobile-top">					
+					     <img src={questionicon} className="header-top-img2" />
+					     <img src={img2} className="header-top-img1" />
+					     <img src={menuicon} className="header-top-img2" />		
+					</div>
+
+					<div className="header-mobile-middle">
+					    <div>
+						    <span>
+	                	       لطفا شهر خود را انتخاب کنید
+	                	    </span>
+	                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+						 </div>
+					     <form className="header-mobile-middle-form">
+	                         <input type="text" placeholder="جستجو" />
+	                         <i className="fa fa-search" aria-hidden="true"></i>
+	                     </form>
+					</div>			 
+				</div>
 
              <div className="header-stick" id="header-stick">            
 	            <div className="header-middle" id="header-middle">

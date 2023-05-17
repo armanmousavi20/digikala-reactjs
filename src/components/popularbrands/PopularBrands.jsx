@@ -66,7 +66,28 @@ const PopularBrands = () =>{
               <div className="popularbrands-slider"> 
 	            <Swiper onSwiper={setSwiperRef} slidesPerView={6} 
 		                centeredSlides={false} spaceBetween={3} 
-		                 navigation={true} className="mySwiper">
+		                 navigation={true} className="mySwiper"
+                       breakpoints={{
+                        2000:{
+                           slidesPerView:8
+                        },
+                        1024:{
+                             slidesPerView:6
+                        },
+                        900:{
+                             slidesPerView:4
+                        },
+                        768:{
+                             slidesPerView:3
+                        },
+                        480:{
+                             slidesPerView:2
+                        },
+                        360:{
+                             slidesPerView:2
+                        }                              
+                       }}
+                       >
                         
                           <SwiperSlide className="SwiperSlide popularbarnds-slider-item">
                              <a href="#">                          

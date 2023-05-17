@@ -37,6 +37,7 @@ SwiperCore.use([Pagination,Navigation]);
 const BestSellingProducts = () =>{
   const [swiperRef, setSwiperRef] = useState(null);
 
+
   let appendNumber = 4;
   let prependNumber = 1;
 	return(<div className="bestsellingproducts-container">
@@ -51,7 +52,23 @@ const BestSellingProducts = () =>{
                         <Swiper onSwiper={setSwiperRef} slidesPerView={4} 
 		                        centeredSlides={false} spaceBetween={3} 
 		                        navigation={true} className="mySwiper"
-		                        autoHeight= {true}>
+		                        autoHeight= {true}
+                                  breakpoints={{
+                                   1024:{
+                                        slidesPerView:3
+                                   },
+                                   768:{
+                                        slidesPerView:2
+                                   },
+                                   480:{
+                                        slidesPerView:1
+                                   },
+                                   200:{
+                                        slidesPerView:1  
+                                   }
+                                   
+                                  }}
+                                  >
 
                                  <SwiperSlide className="SwiperSlide" >
                                       

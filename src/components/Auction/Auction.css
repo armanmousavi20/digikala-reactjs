@@ -70,3 +70,55 @@
 	color: #dbd9d3 !important;
 	margin-left: 20px;
 }
+
+/* responsive */
+/* width < 1024 */
+@media only screen and (max-width: 1024px) and (min-width: 768px){
+	.Auction-container{
+		width: auto;
+		margin: 0;
+	}
+	.Auction-products{
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+	}
+	.Auction-product button{
+		margin-top: 2em;
+	}
+	.Auction-discount{
+		margin-right: 1em;
+	}
+	.Auction-original-price{
+	}
+}
+
+/* tablet */
+@media only screen and (max-width: 768px) and (min-width: 450px){
+	.Auction-container{
+		width: auto;
+		margin: 0;
+	}
+	.Auction-products{
+		display: grid;
+		grid-template-columns: auto auto auto;		
+	}
+	.Auction-product button{
+		margin-top: 3em;
+	}
+	.Auction-discount{
+		margin-right: 1em;
+	}
+}
+/* mobile */
+@media only screen and (max-width: 450px){
+	.Auction-products{
+		display: grid;
+		grid-template-columns: auto;
+	}
+	.Auction-product button{
+		margin-top: 3em;
+	}
+	.Auction-discount{
+		margin-right: 1em;
+	}
+}

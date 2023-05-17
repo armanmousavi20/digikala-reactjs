@@ -58,7 +58,24 @@ const Slider2 = () =>
 	return(<div className="slider2-container"> 
 		        <Swiper onSwiper={setSwiperRef} slidesPerView={6} 
 		                centeredSlides={false} spaceBetween={3} 
-		                 navigation={true} className="mySwiper">
+		                 navigation={true} className="mySwiper"
+                           breakpoints={{
+                              1024:{
+                                   slidesPerView:6
+                              },
+                              900:{
+                                   slidesPerView:5
+                              },
+                              768:{
+                                   slidesPerView:4
+                              },
+                              480:{
+                                   slidesPerView:3
+                              },
+                              360:{
+                                   slidesPerView:2
+                              }                              
+                             }}>
                         
                           <SwiperSlide className="SwiperSlide slider2-amizing-proposal" 
                                        style={{ backgroundColor : "#ef4056" }}>

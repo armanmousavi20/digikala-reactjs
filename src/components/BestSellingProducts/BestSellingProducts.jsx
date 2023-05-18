@@ -40,7 +40,7 @@ const BestSellingProducts = () =>{
 
   let appendNumber = 4;
   let prependNumber = 1;
-	return(<div className="bestsellingproducts-container">
+	return(<div className="bestsellingproducts-container" id="bestsellingproducts-container">
 		       
 		        <div className="bestsellingproducts-top">
 		        	 <a href="#"> مشاهده همه  </a>

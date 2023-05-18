@@ -58,7 +58,7 @@ const PopularBrands = () =>{
       '<div class="swiper-slide">Slide ' + (++appendNumber) + '</div>'
     ]);
   }
-	return(<div className="popularbrands-container">
+	return(<div className="popularbrands-container" id='popularbrands-container'>
 	          <div className="popularbrands-header">
 	           	  <h1> محبوبترین برندها </h1>
 	           	  <i class="fa fa-star" aria-hidden="true"></i>

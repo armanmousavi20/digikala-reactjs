@@ -21,7 +21,7 @@ import auctionimg18 from '../../img/auctionimg18.webp'
 
 
 const Auction = () =>{
-	return(<div className="Auction-container">
+	return(<div className="Auction-container" id='Auction-container'>
 		      <h1>
 		        منتخب محصولات تخفیف و حراج
 	          </h1>

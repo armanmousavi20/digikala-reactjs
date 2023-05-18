@@ -16,7 +16,7 @@ import digikalaoffersimg12 from '../../img/digikalaoffersimg12.jpg'
 const DigikalaOffers = () =>
 {
 	return(<div> 
-		       <div className="digikalaoffer-container">
+		       <div className="digikalaoffer-container" id='digikalaoffer-container'>
 		       <h1> پیشنهادات دیجی کالا </h1>
 		            <div className="digikalaoffer-row1">
 		                <ul>		                    

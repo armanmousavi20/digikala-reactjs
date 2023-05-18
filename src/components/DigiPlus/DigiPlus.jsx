@@ -16,7 +16,7 @@ import digiplusleftimg12 from '../../img/digiplusleftimg12.jpg';
 
 
 const DigiPlus = () =>{
-	return(<div className="DigiPlus-container">
+	return(<div className="DigiPlus-container" id='DigiPlus-container'>
 
 		       <div className="DigiPlus-left">
 		           

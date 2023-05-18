@@ -24,8 +24,9 @@ const Header = () =>
                               } 
                              }
   
-
-
+							 function closeNav() {
+								document.getElementById("myNav").style.width = "0%";
+							  }
 	return(<div className="container" id="header">
 	            <div className="img-header" id="img-header">                   
    				        <img src={img1} />				   
@@ -34,8 +35,27 @@ const Header = () =>
                     <div className="header-mobile-top">					
 					     <img src={questionicon} className="header-top-img2" />
 					     <img src={img2} className="header-top-img1" />
-					     <img src={menuicon} className="header-top-img2" />		
+					     <img src={menuicon} className="header-top-img2" onClick={() => { document.getElementById("myNav").style.width = "100%"; }} />		
 					</div>
+					
+						                   <div id="myNav" class="overlay">
+						                          <a href="javascript:void(0)"
+												    class="closebtn"
+												     onClick={closeNav}
+		                                            >&times;													  
+												  </a>												
+						                          <div class="overlay-content">
+						                              <a href="#amazinproposal" onClick={closeNav}> پیشنهاد شگفت انگیز </a>
+						                              <a href="#categories-container" onClick={closeNav}>دسته بندی کالاها</a>
+						                              <a href="#digikalaoffer-container" onClick={closeNav}> پیشنهادات دیجی کالا </a>
+													  <a href="#popularbrands-container" onClick={closeNav}>   محبوبترین برندها </a>
+						                              <a href="#DigiPlus-container" onClick={closeNav}>  دیجی پلاس </a>
+						                              <a href="#DigiClub-container" onClick={closeNav}>  دیجی کلوب </a>
+						                              <a href="#bestsellingproducts-container" onClick={closeNav}>   پرفروش ترین </a>
+													  <a href="#Auction-container" onClick={closeNav}>   حراجی </a>
+						                          </div>
+					                       </div>
+					
 
 					<div className="header-mobile-middle">
 					    <div>

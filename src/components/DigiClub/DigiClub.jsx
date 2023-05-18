@@ -5,7 +5,7 @@ import digiclubimg2 from '../../img/digiclubimg2.png';
 import digiclubimg3 from '../../img/digiclubimg3.png';
 
 const DigiClub = () =>{
-  return(<div className="DigiClub-container">
+  return(<div className="DigiClub-container" id="DigiClub-container">
                 
              <div className="DigiClub-links">  
                  <a href="#" className="DigiClub-sublinks"

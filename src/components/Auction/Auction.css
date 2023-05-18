@@ -4,6 +4,7 @@
 	margin-right: auto;
 	margin-left: auto;
 	border-radius: 10px;
+	overflow-y: hidden !important;
 }
 
 .Auction-container h1{

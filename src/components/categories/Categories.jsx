@@ -14,7 +14,7 @@ import categoryimg11 from '../../img/categoryimg11.png';
 
 
 const Categories = () =>{
-	return(<div className="categories-container">
+	return(<div className="categories-container" id="categories-container">
 
 	          	<h1>  دسته بندی های دیجی کالا  </h1>
 	          	

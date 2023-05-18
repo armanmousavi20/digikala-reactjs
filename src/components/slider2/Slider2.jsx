@@ -55,7 +55,7 @@ const Slider2 = () =>
   //   ]);
   // }
 
-	return(<div className="slider2-container"> 
+	return(<div className="slider2-container" id="amazinproposal"> 
 		        <Swiper onSwiper={setSwiperRef} slidesPerView={6} 
 		                centeredSlides={false} spaceBetween={3} 
 		                 navigation={true} className="mySwiper"

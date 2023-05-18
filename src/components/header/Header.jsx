@@ -33,7 +33,8 @@ const Header = () =>
 	            </div>
 				<div className='header1-mobile'>
                     <div className="header-mobile-top">					
-					     <img src={questionicon} className="header-top-img2" />
+					     {/* <img src={questionicon} className="header-top-img2" /> */}
+						 <i className="fa fa-shopping-cart" aria-hidden="true"></i>
 					     <img src={img2} className="header-top-img1" />
 					     <img src={menuicon} className="header-top-img2" onClick={() => { document.getElementById("myNav").style.width = "100%"; }} />		
 					</div>

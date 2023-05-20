@@ -317,14 +317,9 @@
 	}
 	.Footer3-container .Footer3-item2{
         flex-basis: 300px;		
-		/* margin-left: 2%;
-		margin-right: 2%; */
 		margin-top: 20px;
 		margin: auto 25%;
 		border-bottom: 1px solid gray;
-		/* display: flex;
-		justify-content: center;
-		align-items: center; */
 	}
 	.Footer3-container .Footer3-item1{
 		flex-basis: 300px;	

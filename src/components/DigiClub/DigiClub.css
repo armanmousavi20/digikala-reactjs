@@ -76,18 +76,14 @@
 	.DigiClub-sublinks{
 		width: 100%;
 		height: 2px;
-		/* border: 1px solid red; */
 	}
     .DigiClub-links{
 		height: 20px !important;
-		/* background-color: #7587c9 !important; */
 	}
 	.DigiClub-links a{
 	    flex-basis: 50px !important;
-		/* height: 100px !important; */
         width: 100%;
         border-radius: 10px !important;
-		/* background-color: blue !important; */
 		margin-top: 1em !important;
 
 	}

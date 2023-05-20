@@ -149,59 +149,7 @@ const TopCategories = () =>{
                             <i class="fa fa-chevron-left" aria-hidden="true"></i>
                             <span> مشاهده همه </span>
                       </div> 
-                 </div>
-
-
-                
-
-{/*                <div className="TopCategories-item">
-                	 <div className="TopCategories-subitem" style={{borderRight: "1px solid #e3e0da"}}>                	 
-                	       <div className="TopCategories-subitem1">
-                	           <h2> ساعت هوشمند </h2>
-                	           <p> بر اساس بازدیدهای شما  </p>
-                	       </div>
-
-                	 	   <div className="TopCategories-subitem2">
-                	 	        <ul>
-                	 	             <a href="#" style={{  borderBottom : "1px solid #e3e0da",
-                                                        borderRight :"1px solid #e3e0da"}}> 
-                                       <li> <img src={TopCategories1img1} />  </li>
-                                  </a>
-                	 	             <a href="#" style={{  borderBottom : "1px solid #e3e0da",
-                                                        borderLeft :"1px solid #e3e0da"}}>
-                                        <li> <img src={TopCategories1img2} />  </li> 
-                                  </a>
-                	 	             <a href="#" style={{  borderTop : "1px solid #e3e0da",
-                                                        borderRight :"1px solid #e3e0da"}}> 
-                                      <li>
-                                          <img src={TopCategories1img3} />  
-                                      </li> 
-                                  </a>    
-                	 	             <a href="#" style={{  borderTop : "1px solid #e3e0da",
-                                                        borderLeft :"1px solid #e3e0da"}}>
-                                      <li>
-                                         <img src={TopCategories1img4} />  
-                                      </li>
-                                  </a>
-                	 	        </ul>
-                	       </div>
-
-                	       <div className="TopCategories-subitem3">
-                	            <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                	 	        <span>  مشاهده همه </span>
-                	       </div>
-                	 </div>
-                </div>
-*/}
-{/*                <div className="TopCategories-item">
-                	 <div className="TopCategories-subitem">
-                	      <div className="TopCategories-subitem1">             	 	
-                	      </div>
-                	      <div className="TopCategories-subitem2">                	 	
-                	      </div>                	 	
-                	 </div>
-                </div>*/}
-
+                 </div>                
 	       </div>);
 }
 

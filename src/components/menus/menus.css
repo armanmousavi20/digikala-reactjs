@@ -63,12 +63,7 @@
 
 @media only screen and (max-width: 1024px) and (min-width: 768px){
 	.container-menus ul{
-		/* display: grid;		
-		grid-template-columns: auto auto auto auto; */
         flex-direction: row-reverse;
-		/* justify-content: center;
-		align-items: center; */
-
 	}
 }
 
@@ -86,7 +81,6 @@
 @media only screen and (max-width: 450px){
 	.container-menus ul{
 		display: flex;
-		/* grid-template-columns: auto auto; */
 		flex-direction: row-reverse;
 		flex-wrap: wrap;
 		justify-content: center;

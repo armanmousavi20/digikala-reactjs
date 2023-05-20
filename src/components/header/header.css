@@ -402,32 +402,6 @@
 	background-color: #767790;
 }
 
-	/* shopping basket styles */
-    /* #shoppingbasketmodal{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	} */
-	.shoppingbasketmodal-header{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-		align-items: center;
-	}
-	/* .shoppingbasketmodal-items{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	} */
-	.shoppingbasketmodal-items .shoppingbasketmodal-item{
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		z-index: 999;
-	}
 	   	  
 	/*  */
 
@@ -560,32 +534,6 @@
 		padding-right: 1em;
         margin-left: 1em;
 	}	
-
-
-
-
-	/* .header-middle{
-		background-color: palevioletred;
-	}  
-	.container .header-stick{
-		display: none;
-	}
-	.header1-mobile{
-		display: flex;
-		flex-direction: column;
-	} */
-	/* .header-mobile-top , .header-mobile-middle , .header-mobile-bottom{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
-	}
-	.header1-mobile .header-mobile-top img{
-		width: 10px;
-		height:10px;
-		background-color: red;
-		border: 1px solid gold;
-	} */
 }
 
 @media only screen and (max-width: 450px){
@@ -594,11 +542,8 @@
 		height: 35px;
 		object-fit:cover;
 	}
-	/* .header-middle{
-		background-color: #767790;		
-	}  */
+
 	  .container .header-stick{
-		/* background-color:  white; */
 		display: none;
 	} 
 	.header1-mobile{
@@ -634,7 +579,6 @@
 	border: none;
 	border-radius: 5px;
 	background: #f1f2f4;
-	/* width: 1em; */
 	height: 3em;
     }
    .header-mobile-middle input:focus{
@@ -643,7 +587,6 @@
 	}
 	::placeholder{
 		position: absolute;
-		/* font-size: 1.5em; */
 	}
 	.header-mobile-middle-form{
 		display: flex;
@@ -655,48 +598,6 @@
 	.header-mobile-middle i{
 		position: relative;
 		float: right;
-		/* padding-right: 1em; */
         margin-left: 1em;		
 	}	
-	/* .header-middle{
-		background-color: palevioletred;
-	}  
-	.container .header-stick{
-		display: none;
-	}
-	.header1-mobile{
-		display: flex;
-		flex-direction: column;
-	} */
-	/* .header-mobile-top , .header-mobile-middle , .header-mobile-bottom{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
-	}
-	.header1-mobile .header-mobile-top img{
-		width: 10px;
-		height:10px;
-		background-color: red;
-		border: 1px solid gold;
-	} */
 }
-
-/* @media only screen and (max-width: 450px){
-	.header-middle{
-		background-color: yellowgreen;
-	}
-	.container .header-stick{
-		display: none;
-	}
-	.header1-mobile{
-		display: flex;
-		flex-direction: column;
-	}
-	.header-mobile-top , .header-mobile-middle , .header-mobile-bottom{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
-	}
-} */

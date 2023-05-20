@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import './navbar.css'
 import NavbarDatas from './NavbarDatas'
 import { Link } from 'react-router-dom'
-//import MiniShoppingBasket from '../MiniShoppingBasket/MiniShoppingBasket'
 
 export default function Navbar() {
 
@@ -10,7 +9,6 @@ export default function Navbar() {
 
     return (
         <div className='navbar-container'>
-            {/* <nav className='navbar1'> */}
                 <ul className='main-menu-list'>
                     {navbarData.length && (
                         navbarData.map(nav => (
@@ -43,8 +41,6 @@ export default function Navbar() {
                         ))
                     )}
                 </ul>
-            {/* </nav> */}
-            {/* <MiniShoppingBasket/> */}
         </div>
     )
 }

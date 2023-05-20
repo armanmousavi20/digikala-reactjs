@@ -71,7 +71,7 @@ const Header = () =>
 	                     </form>
 					</div>			 
 				</div>
-
+                 
              <div className="header-stick" id="header-stick">            
 	            <div className="header-middle" id="header-middle">
 	            	<div className="left-header">

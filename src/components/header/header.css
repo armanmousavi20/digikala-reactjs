@@ -338,7 +338,7 @@
 /* mobile menu */
 /* w3scholl */
 .overlay {
-	height: 100%;
+	height: 100vh;
 	width: 0;
 	position: fixed;
 	z-index: 1;
@@ -382,6 +382,99 @@
 	color : red;
   }
   
+  /* shopping basket */
+  #shoppingbasket{
+	opacity:0 ;
+    position: fixed ; 
+	left:10px ;
+	top:100px;
+    height:0 ;
+	width:40% ; 
+	background-color:#edf5ef;
+	z-index:-9999;
+	border-radius:10px ; 
+	align-items:center;
+  }
+  .shoppingbasket-top{
+	display: flex ;
+	flex-direction : row-reverse ;
+	justify-content:space-between ;
+	align-items:center;
+    margin:auto 2em ;
+  }
+  .shoppingbasket-top-p{
+	cursor: pointer;
+	font-size: 40px ;
+	 font-weight:bolder; 
+  }
+  .shoppingbasket-top-p:hover{
+	color: red;
+  }
+  .shoppingbasket-product{
+	display:flex ; 
+	flex-direction:row-reverse ;
+	 justify-content:space-around ;
+	 align-items: center;
+	  margin:0.5em 1em;
+  }
+  .shoppingbasket-product-img{
+	width: 50px !important;
+	height: 50px !important;
+  }
+  .shoppingbasket-count{
+	display:flex ;
+	 justify-content:"space-between"; 
+	 width:40px
+  }
+  .shoppingbasket-count-plus{
+	padding:2px ; 
+	background-color:#039c2a  ;
+	color:white;
+	cursor: pointer ;
+	width: 1em ;
+	text-align:center;
+  }
+  .shoppingbasket-count-minus{
+	padding:2px ;
+	background-color:#d11f2b ;
+	color:white; 
+	cursor:pointer ;
+	width:1em ; 
+	text-align:center;
+  }
+  .shoppingbasket-count-number{
+	margin: auto 0.2em
+  }
+  .deleteimg{
+	 cursor:pointer ; 
+	 width:20px !important ;
+	 height:20px !important; 
+	 padding:"0.2em";
+  }
+  .shoppingbasket-total-price{
+	display:flex;
+	 flex-direction:row-reverse  ;
+	  justify-content:center ;
+	   margin-right:1em ;
+  }
+  .shoppingbasket-bottom{
+  display:flex; 
+  justify-content:center ;
+   align-items:center;
+  }
+  .shoppingbasket-bottom button{
+	margin-bottom:1em ;
+	 background-color:#01941f ;
+	color: white ;
+	 border:none;
+	padding:0.5em 2em;
+	border-radius:7px ;
+	 cursor:pointer
+  }
+  .shoppingbasket-product img{
+       width: 50px;
+	   height: 50px;
+  }
   @media screen and (max-height: 450px) {
 	.overlay a {font-size: 20px}
 	.overlay .closebtn {

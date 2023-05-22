@@ -3,7 +3,7 @@ import img1 from '../../img/1.gif';
 import img2 from "../../img/2.svg"; 
 import img3 from "../../img/location.png"; 
 import menuicon from '../../img/header/menuicon.png';
-import questionicon from '../../img/header/questionicon.png';
+import deleteicon from '../../img/header/deleteicon.jfif';
 import './header.css';
 import Navbar from './navbar';
 
@@ -38,6 +38,8 @@ const Header = () =>
 					     <img src={img2} className="header-top-img1" />
 					     <img src={menuicon} className="header-top-img2" onClick={() => { document.getElementById("myNav").style.width = "100%"; }} />		
 					</div>
+
+
 					
 						                   <div id="myNav" class="overlay">
 						                          <a href="javascript:void(0)"
@@ -75,9 +77,77 @@ const Header = () =>
              <div className="header-stick" id="header-stick">            
 	            <div className="header-middle" id="header-middle">
 	            	<div className="left-header">
-	            	     <i className="fa fa-shopping-cart" aria-hidden="true"></i>
+	            	     <i className="fa fa-shopping-cart" aria-hidden="true" 
+						    onClick={()=>{document.getElementById('shoppingbasket').style.height="auto";
+							                  document.getElementById('shoppingbasket').style.opacity="1";
+											  document.getElementById('shoppingbasket').style.zIndex="9999";
+						                      }}>								
+							</i>
+
+{/* snap basket */}
+							<div id='shoppingbasket'>                                      
+								<div>	
+									<div className="shoppingbasket-top">	
+									<h2> سبد خرید شما </h2>
+									   <p className="shoppingbasket-top-p"			
+									   onClick={()=> {
+										                document.getElementById('shoppingbasket').style.height="0"
+							                            document.getElementById('shoppingbasket').style.opacity="0";
+						 					            document.getElementById('shoppingbasket').style.zIndex="-9999";
+													}}> 
+											&times;
+									   </p>	
+									</div>
+
+                                    {/* p1 */}
+									<div className='shoppingbasket-product'>
+										<img src={img2} className='shoppingbasket-product-img' />
+										<p> لبتاب asus </p>
+										<p> 30000 تومان </p>  
+                                        <div className='shoppingbasket-count'>
+										   <p className='shoppingbasket-count-plus'> + </p>
+										   <p className='shoppingbasket-count-number'> 1 </p>
+   										   <p className='shoppingbasket-count-minus'> - </p>
+                                        </div>
+                                        <p> 30000 تومان </p>  
+									<img src={deleteicon} className="deleteimg"/>
+									</div>
+
+									{/* p2 */}
+									<div className='shoppingbasket-product'>
+										<img src={img2} className='shoppingbasket-product-img' />
+										<p> لبتاب asus </p>
+										<p> 30000 تومان </p>  
+                                        <div className='shoppingbasket-count'>
+										   <p className='shoppingbasket-count-plus'> + </p>
+										   <p className='shoppingbasket-count-number'> 1 </p>
+   										   <p className='shoppingbasket-count-minus'> - </p>
+                                        </div>
+                                        <p> 30000 تومان </p>  
+									<img src={deleteicon} className="deleteimg"/>
+									</div>
+
+
+									</div>
+
+                            <hr />
+							<div className='shoppingbasket-total-price'>
+								<p>  : جمع کل  </p>
+								<p>  300000 </p>
+								<p> تومان </p>
+							</div>
+
+							<div className='shoppingbasket-bottom'> 
+							    <button>
+							    ادامه خرید 
+								</button>
+							</div>
+
+							</div>
+{/* snap basket */}
+
 	                     <button className="header-btn">
-	                         <span className="header-btn-span">
+	                         <span className="header-btn-span">								
 	                              <i className="fa fa-sign-in" aria-hidden="true"></i>
 	                         </span>	                         
 	                         <span className="header-btn-span"> ورود  </span>

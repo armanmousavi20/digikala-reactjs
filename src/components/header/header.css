@@ -410,6 +410,12 @@
   .shoppingbasket-top-p:hover{
 	color: red;
   }
+  .empty_shopping_basket{
+	text-align: center;
+	font-size: large;
+	font-weight: bolder;
+	color: rgb(201, 89, 89);
+  }
   .shoppingbasket-product{
 	display:flex ; 
 	flex-direction:row-reverse ;

@@ -6,13 +6,25 @@ import menuicon from '../../img/header/menuicon.png';
 import deleteicon from '../../img/header/deleteicon.jfif';
 import './header.css';
 import Navbar from './navbar';
+// redux
+import { useSelector , useDispatch } from 'react-redux';
+import { increment , decrement , removeitem } from '../../features/shoppingcart/shoppingcartSlice';
+import { keyboard } from '@testing-library/user-event/dist/keyboard';
 
 const Header = () =>
 {
 	const[showCat, setShowCat] = useState(false);
     const[showList, setShowList] = useState(false);
     const[counter, setCounter] = useState(0);
-    	
+
+	// redux
+	const dispatch = useDispatch();
+	// const count = useSelector((c) => c.shoppingcart.value)
+	const count = useSelector((c) => c.shoppingcart.cart.length)
+	let productslist = useSelector( (s) => s.shoppingcart.cart);
+	let total = useSelector( (s) => s.shoppingcart.total);
+
+	
 	window.onscroll = () =>{if( window.scrollY > document.getElementById('img-header').clientHeight )
                                {
                                    document.getElementById('header-stick').classList.add("header-sticky");
@@ -81,7 +93,9 @@ const Header = () =>
 						    onClick={()=>{document.getElementById('shoppingbasket').style.height="auto";
 							                  document.getElementById('shoppingbasket').style.opacity="1";
 											  document.getElementById('shoppingbasket').style.zIndex="9999";
-						                      }}>								
+											  document.getElementById('shoppingbasket').style.display="block";
+						                      }}>
+											{/* <p> { productslist.length ? (productslist.length) : '' } </p>								 */}
 							</i>
 
 {/* snap basket */}
@@ -94,46 +108,55 @@ const Header = () =>
 										                document.getElementById('shoppingbasket').style.height="0"
 							                            document.getElementById('shoppingbasket').style.opacity="0";
 						 					            document.getElementById('shoppingbasket').style.zIndex="-9999";
+						 					            document.getElementById('shoppingbasket').style.display="none";
 													}}> 
 											&times;
 									   </p>	
 									</div>
 
-                                    {/* p1 */}
-									<div className='shoppingbasket-product'>
-										<img src={img2} className='shoppingbasket-product-img' />
-										<p> لبتاب asus </p>
-										<p> 30000 تومان </p>  
-                                        <div className='shoppingbasket-count'>
-										   <p className='shoppingbasket-count-plus'> + </p>
-										   <p className='shoppingbasket-count-number'> 1 </p>
-   										   <p className='shoppingbasket-count-minus'> - </p>
-                                        </div>
-                                        <p> 30000 تومان </p>  
-									<img src={deleteicon} className="deleteimg"/>
-									</div>
+                                    {/* shopping basket products */}
+									{
+                                       productslist.length>0 ? (
 
-									{/* p2 */}
-									<div className='shoppingbasket-product'>
-										<img src={img2} className='shoppingbasket-product-img' />
-										<p> لبتاب asus </p>
-										<p> 30000 تومان </p>  
-                                        <div className='shoppingbasket-count'>
-										   <p className='shoppingbasket-count-plus'> + </p>
-										   <p className='shoppingbasket-count-number'> 1 </p>
-   										   <p className='shoppingbasket-count-minus'> - </p>
-                                        </div>
-                                        <p> 30000 تومان </p>  
-									<img src={deleteicon} className="deleteimg"/>
-									</div>
-
+										productslist.map((p , i ) =>{
+											return(
+											<div className='shoppingbasket-product' key={i}>
+											<img src={img2} className='shoppingbasket-product-img' />
+											<p> {productslist[i].title} </p>
+											<p> {productslist[i].price}</p>  
+											<div className='shoppingbasket-count'>
+											   <p className='shoppingbasket-count-plus' 
+												   onClick={()=> {
+													dispatch(increment(p)) ; 
+												   }}>
+													 + 
+												</p>
+											   <p className='shoppingbasket-count-number'> { productslist[i].count} </p>
+												  <p className='shoppingbasket-count-minus' 
+												  onClick={()=>{
+													dispatch(decrement(p));
+												   }}>
+												- 
+												</p>
+											</div>
+											<p> {productslist[i].price * productslist[i].count}</p>  
+										<img src={deleteicon} className="deleteimg"
+											  onClick={()=> { alert(`میخواهید محصول ${p.title} را حذف کنید؟`);
+											                   dispatch(removeitem(p)) 
+															   } }  />
+										</div>
+										)
+										})): <div className='empty_shopping_basket'> سبد خرید شما خالی است </div>
+									}
 
 									</div>
 
                             <hr />
+							{productslist.length>0 ?
+                             <div> 
 							<div className='shoppingbasket-total-price'>
 								<p>  : جمع کل  </p>
-								<p>  300000 </p>
+								<p>  {total} </p>
 								<p> تومان </p>
 							</div>
 
@@ -142,7 +165,9 @@ const Header = () =>
 							    ادامه خرید 
 								</button>
 							</div>
-
+							</div>
+							:''
+                            } 
 							</div>
 {/* snap basket */}
 

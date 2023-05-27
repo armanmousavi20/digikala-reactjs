@@ -12,7 +12,6 @@ import {  GrLocation} from 'react-icons/gr';
 // redux
 import { useSelector , useDispatch } from 'react-redux';
 import { increment , decrement , removeitem } from '../../features/shoppingcart/shoppingcartSlice';
-import { keyboard } from '@testing-library/user-event/dist/keyboard';
 
 const Header = () =>
 {
@@ -22,7 +21,6 @@ const Header = () =>
 
 	// redux
 	const dispatch = useDispatch();
-	// const count = useSelector((c) => c.shoppingcart.value)
 	const count = useSelector((c) => c.shoppingcart.cart.length)
 	let productslist = useSelector( (s) => s.shoppingcart.cart);
 	let total = useSelector( (s) => s.shoppingcart.total);
@@ -92,7 +90,6 @@ const Header = () =>
              <div className="header-stick" id="header-stick">            
 	            <div className="header-middle" id="header-middle">
 	            	<div className="left-header">
-					{/* <i style="font-size:24px" class="fa">&#xf07a;</i> */}
 					<span className='Badge'>
 					{ productslist.length ? (productslist.length) : '' }
 					</span>
@@ -104,22 +101,7 @@ const Header = () =>
 											  document.getElementById('shoppingbasket').style.display="block";
 						                      }}
 									/>	
-						{/* <span className='Badge'> */}
-						{/* </span>	 */}
-						{/* </FaShoppingCart> */}
-				
-
-								 {/* <p> { productslist.length ? (productslist.length) : '' } </p>*/} 
-				
-	            	     {/* <i class="fa fa-shopping-cart" aria-hidden="true" 
-						    onClick={()=>{document.getElementById('shoppingbasket').style.height="auto";
-							                  document.getElementById('shoppingbasket').style.opacity="1";
-											  document.getElementById('shoppingbasket').style.zIndex="9999";
-											  document.getElementById('shoppingbasket').style.display="block";
-						                      }}
-											  >
-							</i> */}
-
+		
 {/* snap basket */}
 							<div id='shoppingbasket'>                                      
 								<div>	

@@ -19,8 +19,6 @@
   height: 110px;
 }
 
-#header-stick{
-}
 .header-sticky #right-line , .header-sticky #box{
   position: absolute;
   top: 77px;
@@ -87,7 +85,7 @@
 	right: 2%;
 	font-size: 15px;
 }
-.container .header-middle .header-search .header-form i{
+.container .header-middle .header-search .header-form .FaSearch{
 	position: absolute;
 	right: 3%;
 	top: 30%;
@@ -98,6 +96,9 @@
 }
 .container .header-middle .left-header{
 	flex: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .header-btn{
@@ -116,15 +117,27 @@
    font-weight: bold;
 }
 
-.container .header-middle .left-header  .fa-shopping-cart{
+.container .header-middle .left-header  .shoppingcart{
 	margin-right: 12px;
 	border-right: 1px solid #ecedeb ;
 	padding: 10px 15px;
 	cursor: pointer;
+	justify-self: center;
+	font-size: x-large;
 }
-.container .header-middle .left-header i:hover{
+.container .header-middle .left-header .shoppingcart:hover{
 	color: red;
 }
+.Badge{
+background-color: #e72431;
+color: white;
+padding: 0.2em;
+border-radius: 50%;
+position: relative;
+left: 3em;
+top: 0.75em;
+}
+
 .header-bottom{
 	margin-top: 14px;
 	display: flex;
@@ -133,7 +146,6 @@
 	align-items: flex-start;
 	width: 98%;
 	font-weight: bold;
-	/* background-color: pink; */
 	margin-left: auto;
 	margin-right: auto;
 	border-bottom: 2px solid lightcoral;
@@ -239,10 +251,10 @@
 } 
 
 
-.header-bottom4:hover , .header-bottom4:hover i{
+.header-bottom4:hover , .header-bottom4:hover .GrLocation {
 	color: red;
 }
-.header-bottom4 i{
+.header-bottom4 .GrLocation{
 	cursor: pointer;
 	margin-left: 1em !important;
 }

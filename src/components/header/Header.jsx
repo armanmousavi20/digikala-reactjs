@@ -6,6 +6,9 @@ import menuicon from '../../img/header/menuicon.png';
 import deleteicon from '../../img/header/deleteicon.jfif';
 import './header.css';
 import Navbar from './navbar';
+import { FaShoppingCart , FaSearch  } from 'react-icons/fa';
+import {  GrLocation} from 'react-icons/gr';
+
 // redux
 import { useSelector , useDispatch } from 'react-redux';
 import { increment , decrement , removeitem } from '../../features/shoppingcart/shoppingcartSlice';
@@ -89,14 +92,33 @@ const Header = () =>
              <div className="header-stick" id="header-stick">            
 	            <div className="header-middle" id="header-middle">
 	            	<div className="left-header">
-	            	     <i className="fa fa-shopping-cart" aria-hidden="true" 
+					{/* <i style="font-size:24px" class="fa">&#xf07a;</i> */}
+					<span className='Badge'>
+					{ productslist.length ? (productslist.length) : '' }
+					</span>
+						 <FaShoppingCart 
+						 className='shoppingcart'						   
+						  onClick={()=>{document.getElementById('shoppingbasket').style.height="auto";
+							                  document.getElementById('shoppingbasket').style.opacity="1";
+											  document.getElementById('shoppingbasket').style.zIndex="9999";
+											  document.getElementById('shoppingbasket').style.display="block";
+						                      }}
+									/>	
+						{/* <span className='Badge'> */}
+						{/* </span>	 */}
+						{/* </FaShoppingCart> */}
+				
+
+								 {/* <p> { productslist.length ? (productslist.length) : '' } </p>*/} 
+				
+	            	     {/* <i class="fa fa-shopping-cart" aria-hidden="true" 
 						    onClick={()=>{document.getElementById('shoppingbasket').style.height="auto";
 							                  document.getElementById('shoppingbasket').style.opacity="1";
 											  document.getElementById('shoppingbasket').style.zIndex="9999";
 											  document.getElementById('shoppingbasket').style.display="block";
-						                      }}>
-											{/* <p> { productslist.length ? (productslist.length) : '' } </p>								 */}
-							</i>
+						                      }}
+											  >
+							</i> */}
 
 {/* snap basket */}
 							<div id='shoppingbasket'>                                      
@@ -172,9 +194,6 @@ const Header = () =>
 {/* snap basket */}
 
 	                     <button className="header-btn">
-	                         <span className="header-btn-span">								
-	                              <i className="fa fa-sign-in" aria-hidden="true"></i>
-	                         </span>	                         
 	                         <span className="header-btn-span"> ورود  </span>
 	                         <span className="header-btn-span"> | </span> 
 	                          <span className="header-btn-span">ثبت نام   </span>
@@ -183,8 +202,8 @@ const Header = () =>
 
 	                <div className="header-search">
 	                     <form className="header-form">
-	                         <input type="text" placeholder="جستجو" />
-	                         <i className="fa fa-search" aria-hidden="true"></i>
+	                         <input type="text" placeholder="جستجو" />							 
+							 <FaSearch className='FaSearch' />
 	                     </form>
 	                </div>
 
@@ -202,21 +221,17 @@ const Header = () =>
 	                	        <span>
 	                	           شگفت انگیزها 
 	                	        </span>
-	                	        <i class="fa fa-fire" aria-hidden="true"></i>
 	                	     </li>	                	                  	   
 	                	    <li>
 	                	        <span>
 	                	      تخفیف ها و پیشنهادها 
 	                	        </span>
-                                <i class="fa fa-percent" aria-hidden="true"></i>
 	                	      </li>	                	   
 	                	    <li>
 	                	       <span>پرفروش ترین ها  </span>
-                               <i class="fa fa-trophy" aria-hidden="true"></i>
 	                	     </li>	                	   
 	                	    <li>
 	                	        <span> سوپر مارکت  </span> 
-	                	        <i class="fa fa-shopping-basket" aria-hidden="true"></i>                               
 	                	     </li>	 
 	                	 </ul>
 	                </div>
@@ -232,7 +247,7 @@ const Header = () =>
 	                     <span>
 	                	لطفا شهر خود را انتخاب کنید
 	                	</span>
-	                     <i class="fa fa-map-marker" aria-hidden="true"></i>
+						<GrLocation className='GrLocation' />
 	                </div>
 
 	            </div>

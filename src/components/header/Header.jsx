@@ -1,9 +1,9 @@
 import React,{useState , useEffect} from 'react';
 import img1 from '../../img/1.gif';
 import img2 from "../../img/2.svg"; 
-import img3 from "../../img/location.png"; 
 import menuicon from '../../img/header/menuicon.png';
 import deleteicon from '../../img/header/deleteicon.jfif';
+
 import './header.css';
 import Navbar from './navbar';
 import { FaShoppingCart , FaSearch  } from 'react-icons/fa';
@@ -125,7 +125,7 @@ const Header = () =>
 										productslist.map((p , i ) =>{
 											return(
 											<div className='shoppingbasket-product' key={i}>
-											<img src={img2} className='shoppingbasket-product-img' />
+											<img src={`${p.img}`} className='shoppingbasket-product-img' />
 											<p> {productslist[i].title} </p>
 											<p> {productslist[i].price}</p>  
 											<div className='shoppingbasket-count'>

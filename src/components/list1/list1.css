@@ -13,10 +13,12 @@
 	list-style-type: none;
 	display: flex;
 	flex-direction: row;	
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 }
-
+.list1-container ul li ul li{
+   margin-left: 1em;	
+}
 .list1-container ul li a{
    text-decoration: none;
 }

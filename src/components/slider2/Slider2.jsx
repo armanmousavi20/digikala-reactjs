@@ -30,8 +30,8 @@ SwiperCore.use([Pagination,Navigation]);
 
 const Slider2 = () =>
 {
+     //redux
      const dispatch = useDispatch();
-     // add redux
      const handleAddToCart = (data) => {
           dispatch(addToCart({
                  ...data,      
@@ -82,23 +82,26 @@ const Slider2 = () =>
                         
                           <SwiperSlide className="SwiperSlide" style={{ borderRadius : "0 10px 10px 0" }}
                             onClick={()=>{ 
-                                         handleAddToCart({id:1,title:'mobile',price:3000,count:1})
+                                         handleAddToCart({id:1,title:'جارو برقی',price:1000000,
+                                                          count:1,
+                                                          img:slider2img1})
                                         }}>                       
 
                               <img src={slider2img1} />
                               <span className="SwiperSlide-row1">
                                    <span className="slider2-discount-percent"> 20%   </span>
-                                   <span> 120,000 تومان  </span>
+                                   <span> 800,000 تومان  </span>
                               </span>
                               <span className="SwiperSlide-row2">
-                                   <span className="SwiperSlide-row2-span"> 100,000 تومان  </span>
+                                   <span className="SwiperSlide-row2-span"> 1,000,000 تومان  </span>
                                </span>                                                            
                           </SwiperSlide>
                           
                           <SwiperSlide className="SwiperSlide"
                                         onClick={()=>{ 
-                                                      handleAddToCart({id:2,title:'lab',
-                                                                        price:100000,count:1});                                                                        
+                                                      handleAddToCart({id:2,title:'ریش تراش',
+                                                                        price:100000,count:1 ,
+                                                                         img:slider2img2});                                                                        
                                                        }}>                            
                               <img src={slider2img2} />
                               <span className="SwiperSlide-row1">
@@ -112,36 +115,39 @@ const Slider2 = () =>
 
                           <SwiperSlide className="SwiperSlide"
                                        onClick={()=>{ 
-                                             handleAddToCart({id:3,title:'tablet',price:7000,count:1})
+                                             handleAddToCart({id:3,title:'موبایل',price:800000
+                                                             ,count:1 , img:slider2img3 })
                                                        }}>
                               <img src={slider2img3} />
                               <span className="SwiperSlide-row1">
-                                    <span className="slider2-discount-percent"> 20%   </span>
-                                    <span> 120,000 تومان  </span>
+                                    <span className="slider2-discount-percent"> 10%   </span>
+                                    <span> 730,000 تومان  </span>
                               </span>
                               <span className="SwiperSlide-row2">
-                                   <span className="SwiperSlide-row2-span"> 100,000 تومان  </span>
+                                   <span className="SwiperSlide-row2-span"> 800,000 تومان  </span>
                                </span>
                           </SwiperSlide>
 
                           <SwiperSlide className="SwiperSlide"
                                        onClick={()=>{ 
-                                        handleAddToCart({id:4,title:'watch',price:3000,count:1})
+                                        handleAddToCart({id:4,title:'نرم کننده مو',price:30000,
+                                                         count:1 , img:slider2img4 })
                                        }}
                           >
                               <img src={slider2img4} />
                                <span className="SwiperSlide-row1">
                                     <span className="slider2-discount-percent"> 20%   </span>
-                                    <span> 120,000 تومان  </span>
+                                    <span> 30,000 تومان  </span>
                               </span>
                               <span className="SwiperSlide-row2">
-                                   <span className="SwiperSlide-row2-span"> 100,000 تومان  </span>
+                                   <span className="SwiperSlide-row2-span"> 450,000 تومان  </span>
                                </span>
                           </SwiperSlide>
 
                           <SwiperSlide className="SwiperSlide"
                                       onClick={()=>{ 
-                                      handleAddToCart({id:5,title:'note11',price:54000,count:1})
+                                      handleAddToCart({id:5,title:'کیف چرمی',price:100000
+                                                      ,count:1, img:slider2img5})
                                                        }}>
                               <img src={slider2img5} />
                               <span className="SwiperSlide-row1">
@@ -155,26 +161,28 @@ const Slider2 = () =>
 
                           <SwiperSlide className="SwiperSlide"
                                         onClick={()=>{ 
-                                        handleAddToCart({id:6,title:'note8',price:8700,count:1})
+                                        handleAddToCart({id:6,title:'دستمال کاغذی',price:90000,
+                                                         count:1, img:slider2img6})
                                                        }}>
                               <img src={slider2img6} />
                               <span className="SwiperSlide-row1">
-                                    <span className="slider2-discount-percent"> 20%   </span>
+                                    <span className="slider2-discount-percent"> 30%   </span>
                                     <span> 120,000 تومان  </span>
                               </span>
                               <span className="SwiperSlide-row2">
-                                   <span className="SwiperSlide-row2-span"> 100,000 تومان  </span>
+                                   <span className="SwiperSlide-row2-span"> 90,000 تومان  </span>
                                </span>
                           </SwiperSlide>
 
                           <SwiperSlide className="SwiperSlide"
                                         onClick={()=>{ 
-                                        handleAddToCart({id:9,title:'asus',price:38000,count:1})
+                                        handleAddToCart({id:7,title:'پاور بانک',price:35000
+                                                      ,count:1 , img:slider2img7})
                                                        }}>
                               <img src={slider2img7} />
                                <span className="SwiperSlide-row1">
-                                    <span className="slider2-discount-percent"> 20%   </span>
-                                    <span> 120,000 تومان  </span>
+                                    <span className="slider2-discount-percent"> 30%   </span>
+                                    <span> 50,000 تومان  </span>
                               </span>
                               <span className="SwiperSlide-row2">
                                    <span className="SwiperSlide-row2-span"> 100,000 تومان  </span>
@@ -183,35 +191,38 @@ const Slider2 = () =>
 
                           <SwiperSlide className="SwiperSlide"
                                         onClick={()=>{ 
-                                         handleAddToCart({id:9,title:'hp',price:39000,count:1})
+                                         handleAddToCart({id:8,title:'دریل',price:1000000
+                                                         ,count:1 , img:slider2img8})
                                                        }}>
                               <img src={slider2img8} />
                               <span className="SwiperSlide-row1">
-                                    <span className="slider2-discount-percent"> 20%   </span>
-                                    <span> 120,000 تومان  </span>
+                                    <span className="slider2-discount-percent"> 30%   </span>
+                                    <span> 1,000,000 تومان  </span>
                               </span>
                               <span className="SwiperSlide-row2">
-                                   <span className="SwiperSlide-row2-span"> 100,000 تومان  </span>
+                                   <span className="SwiperSlide-row2-span"> 1,500,000 تومان  </span>
                                </span>
                           </SwiperSlide>
 
                           <SwiperSlide className="SwiperSlide"
                                        onClick={()=>{ 
-                                       handleAddToCart({id:10,title:'fj',price:30800,count:1})
+                                       handleAddToCart({id:10,title:'کفش اسپرت',price:1000000
+                                                       ,count:1 , img:slider2img9})
                                                        }}>
                               <img src={slider2img9} />
                               <span className="SwiperSlide-row1">
-                                    <span className="slider2-discount-percent"> 20%   </span>
-                                    <span> 120,000 تومان  </span>
+                                    <span className="slider2-discount-percent"> 10%   </span>
+                                    <span> 1,000,000 تومان  </span>
                               </span>
                               <span className="SwiperSlide-row2">
-                                   <span className="SwiperSlide-row2-span"> 100,000 تومان  </span>
+                                   <span className="SwiperSlide-row2-span"> 1,200,000 تومان  </span>
                                </span>
                           </SwiperSlide>
 
                            <SwiperSlide className="SwiperSlide SwiperSlide-end"
                                         onClick={()=>{ 
-                                        handleAddToCart({id:11,title:'sam',price:398000,count:1})
+                                        handleAddToCart({id:11,title:'کفش اسپرت',price:398000
+                                                          ,count:1 , img:slider2img1})
                                                         }}>
                                 <i class="fa fa-arrow-left" aria-hidden="true"></i>
                                 <span>
